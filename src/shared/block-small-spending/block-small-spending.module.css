@@ -1,0 +1,29 @@
+.container {
+  background-color: #262626;
+  border-radius: 20px;
+  min-width: 199px;
+  min-height: 182px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.label {
+  color: #cdcdcd;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.value {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #ff8400;
+}

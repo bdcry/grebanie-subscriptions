@@ -1,0 +1,52 @@
+.container {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+
+  background: #ff8401;
+  border-radius: 20px 20px 0 0;
+  min-width: 403px;
+  min-height: 127px;
+  color: #000000;
+}
+
+.info {
+  padding: 34px 0 0 25px;
+}
+
+.name {
+  position: relative;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.name::after {
+  content: "©";
+  position: absolute;
+  font-size: 0.9rem;
+}
+
+.divider {
+  border: unset;
+  width: 100%;
+  height: 3px;
+  background: #000000;
+}
+
+.info:nth-child(3) {
+  padding-right: 25px;
+  padding-top: 0;
+  margin: 0;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.designed,
+.developed {
+  margin: 0;
+  font-size: 0.79rem;
+  font-weight: 600;
+}

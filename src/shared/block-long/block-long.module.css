@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background: linear-gradient(128deg, #202020 28.07%, #FF8400 83.69%);
+  border-radius: 20px;
+  min-width: 403px;
+  min-height: 182px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.label {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.subscription {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+}

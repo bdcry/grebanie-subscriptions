@@ -1,0 +1,11 @@
+.groupBlocks {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.groupSmallBlocks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
