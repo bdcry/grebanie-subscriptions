@@ -2,11 +2,11 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: #262626;
+  background: var(--color-gray);
   border-radius: 20px;
   min-width: 403px;
   min-height: 182px;
-  color: #cdcdcd;
+  color: var(--primary-color);
 }
 
 .info {
@@ -20,15 +20,15 @@
   max-width: 291px;
   margin: 0;
   font-size: 0.95rem;
-  font-weight: 700;
+  font-weight: var(--bold);
   text-align: center;
 }
 
 .years {
   margin: 0;
   font-size: 2.2rem;
-  font-weight: 700;
-  color: #ff8400;
+  font-weight: var(--bold);
+  color: var(--secondary-color);;
 }
 
 @media screen and (max-width: 440px) {

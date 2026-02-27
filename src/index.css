@@ -1,3 +1,19 @@
+:root {
+  /* Main colors */
+  --primary-color: #cdcdcd;
+  --secondary-color: #ff8400;
+  --text-color-primary: #ffffff;
+  --text-color-secondary: #cdcdcd;
+  --color-black: #000000;
+  --color-gray: #262626;
+
+  /* Font weight */
+  --bold: 700;
+  --extra-bold: 800;
+  --semi-bold: 600;
+  --regular: 400;
+}
+
 body {
   margin: 0;
   font-size: 16px;

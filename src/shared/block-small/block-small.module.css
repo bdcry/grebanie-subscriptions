@@ -1,5 +1,5 @@
 .container {
-  background-color: #262626;
+  background-color: var(--color-gray);
   border-radius: 20px;
   min-width: 199px;
   min-height: 182px;
@@ -17,15 +17,15 @@
 }
 
 .label {
-  color: #cdcdcd;
+  color: var(--primary-color);
   font-size: 0.95rem;
-  font-weight: 700;
+  font-weight: var(--bold);
 }
 
 .value {
   font-size: 2.2rem;
-  font-weight: 800;
-  color: #ff8400;
+  font-weight: var(--extra-bold);
+  color: var(--secondary-color);;
 }
 
 @media screen and (max-width: 440px) {

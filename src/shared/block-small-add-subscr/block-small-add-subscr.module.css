@@ -1,5 +1,5 @@
 .container {
-  background-color: #262626;
+  background-color: var(--color-gray);
   border-radius: 20px;
   min-width: 199px;
   min-height: 182px;
@@ -17,17 +17,17 @@
 }
 
 .label {
-  color: #cdcdcd;
+  color: var(--primary-color);
   font-size: 0.95rem;
-  font-weight: 700;
+  font-weight: var(--bold);
 }
 
 .button {
   all: unset;
   font-size: 2.2rem;
-  font-weight: 800;
-  color: #000000;
-  background-color: #ff8400;
+  font-weight: var(--extra-bold);
+  color: var(--color-black);
+  background-color: var(--secondary-color);;
   width: 64px;
   height: 64px;
   border-radius: 50%;
@@ -40,7 +40,7 @@
 .button::before {
   content: "";
   position: absolute;
-  background-color: #000000;
+  background-color: var(--color-black);
   width: 3px;
   height: 40%;
   border-radius: 20px;
@@ -48,7 +48,7 @@
 .button::after {
   content: "";
   position: absolute;
-  background-color: #000000;
+  background-color: var(--color-black);
   width: 40%;
   height: 3px;
   border-radius: 20px;

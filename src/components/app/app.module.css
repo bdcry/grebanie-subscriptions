@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 30px 21px 0 21px;
   min-height: 100vh;
-  color: #ffffff;
+  color: var(--text-color-primary);
   font-family: "Inter", sans-serif;
 
   display: flex;
