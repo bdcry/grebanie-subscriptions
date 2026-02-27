@@ -2,10 +2,10 @@ import type { JSX } from "@emotion/react/jsx-runtime";
 
 import BlockLong from "../../shared/block-long/block-long";
 import BlockLongGray from "../../shared/block-long-gray/block-long-gray";
-import BlockSmall from "../../shared/block-small/block-small";
-import BlockSmallAddSubscr from "../../shared/block-small-add-subscr/block-small-add-subscr";
-import BlockSmallCheckSpending from "../../shared/block-small-check-spending/block-small-check-spending";
-import BlockSmallSpending from "../../shared/block-small-spending/block-small-spending";
+import CheckSpending from "../check-spending/check-spending";
+import CreateSubsc from "../create-subsc/create-subsc";
+import ExpensesAmount from "../expenses-amount/expenses-amount";
+import TotalSubsc from "../total-subsc/total-subsc";
 import styles from "./box-blocks.module.css";
 
 const BoxBlocks = (): JSX.Element => {
@@ -13,10 +13,10 @@ const BoxBlocks = (): JSX.Element => {
     <div className={styles.groupBlocks}>
       <BlockLong />
       <div className={styles.groupSmallBlocks}>
-        <BlockSmall />
-        <BlockSmallSpending />
-        <BlockSmallAddSubscr />
-        <BlockSmallCheckSpending />
+        <TotalSubsc />
+        <ExpensesAmount />
+        <CreateSubsc />
+        <CheckSpending />
       </div>
       <BlockLongGray />
     </div>

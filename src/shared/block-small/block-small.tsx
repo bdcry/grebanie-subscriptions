@@ -1,17 +1,54 @@
-import type { JSX } from "@emotion/react/jsx-runtime";
+import type { ReactElement } from "react";
 
 import styles from "./block-small.module.css";
 
-const BlockSmall = (): JSX.Element => {
-  // TODO: оставить просто пустой компонент, тк он shared, передавать children из src/components уже с нужными данными(например в случаях, если у меня есть иконки или onClick) или же сделать универсальный компонент, который будет отрисовывать данные в зависимости от передаваемых пропсов. например, передавать тип начинки и в зависимости от него рисовать нужный блок..
-  return (
-    <div className={styles.container}>
-      <div className={styles.info}>
-        <span className={styles.label}>Всего подписок:</span>
-        <span className={styles.value}>100</span>
-      </div>
-    </div>
-  );
+type TBlockSmallProps = {
+  title: string;
+  count?: number;
+  type: "textComp" | "buttonComp";
+  currency?: string;
+  buttonType?: "createSubsc";
+  onClick?: () => void;
+};
+
+const BlockSmall = ({
+  title,
+  count,
+  type,
+  currency,
+  buttonType,
+  onClick,
+}: TBlockSmallProps): ReactElement => {
+  const renderElement = () => {
+    if (type === "textComp") {
+      return (
+        <div className={styles.container}>
+          <div className={styles.info}>
+            <span className={styles.label}>{title}</span>
+            <span
+              className={`${currency ? styles["value-b"] : styles["value-extra-b"]}`}
+            >
+              {count}
+              {currency}
+            </span>
+          </div>
+        </div>
+      );
+    } else if (type === "buttonComp") {
+      return (
+        <div className={styles.container}>
+          <div className={`${styles["info-b-comp"]}`}>
+            <span className={styles.label}>{title}</span>
+            <button
+              onClick={onClick}
+              className={`${!buttonType ? styles["button-spending"] : styles["button-add"]}`}
+            />
+          </div>
+        </div>
+      );
+    }
+  };
+  return <>{renderElement()}</>;
 };
 
 export default BlockSmall;
