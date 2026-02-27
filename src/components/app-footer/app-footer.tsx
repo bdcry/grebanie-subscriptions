@@ -4,7 +4,7 @@ import styles from "./app-footer.module.css";
 
 const AppFooter = (): JSX.Element => {
   return (
-    <div className={styles.container}>
+    <footer className={styles.container}>
       <div className={styles.info}>
         <h2 className={styles.name}>Долбанные подписки</h2>
       </div>
@@ -13,7 +13,7 @@ const AppFooter = (): JSX.Element => {
         <p className={styles.designed}>designed by @fairyma</p>
         <p className={styles.developed}>developed by @blackbaccy</p>
       </div>
-    </div>
+    </footer>
   );
 };
 

@@ -8,6 +8,8 @@
   min-width: 403px;
   min-height: 127px;
   color: #000000;
+
+  flex-shrink: 0;
 }
 
 .info {
@@ -49,4 +51,15 @@
   margin: 0;
   font-size: 0.79rem;
   font-weight: 600;
+}
+
+@media screen and (max-width: 440px) {
+  .container {
+    min-width: 100%;
+  }
+
+  .designed,
+  .developed {
+    font-size: 0.7rem;
+  }
 }

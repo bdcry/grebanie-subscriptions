@@ -47,3 +47,9 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+@media screen and (max-width: 440px) {
+  .container {
+    min-width: 100%;
+  }
+}

@@ -19,7 +19,7 @@
 .label {
   color: #cdcdcd;
   font-size: 0.95rem;
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .button {
@@ -52,4 +52,10 @@
   width: 40%;
   height: 3px;
   border-radius: 20px;
+}
+
+@media screen and (max-width: 440px) {
+  .container {
+    min-width: 100%;
+  }
 }

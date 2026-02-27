@@ -7,7 +7,9 @@ const App = () => {
   return (
     <div className={styles.app}>
       <AppHeader />
-      <BoxBlocks />
+      <main className={styles.main}>
+        <BoxBlocks />
+      </main>
       <AppFooter />
     </div>
   );
