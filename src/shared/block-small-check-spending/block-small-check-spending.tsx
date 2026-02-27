@@ -7,7 +7,7 @@ const BlockSmallCheckSpending = (): JSX.Element => {
   return (
     <div className={styles.container}>
       <div className={styles.info}>
-        <span className={styles.label}>Посмотреть траты за год:</span>
+        <span className={styles.label}>Посмотреть подписки:</span>
         <button className={`${styles.button}`} />
       </div>
     </div>
