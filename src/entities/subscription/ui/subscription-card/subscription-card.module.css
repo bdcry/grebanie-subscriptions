@@ -1,0 +1,25 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.label {
+  font-size: 0.75rem;
+  font-weight: var(--regular);
+}
+
+.subscription {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-weight: var(--semi-bold);
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.price {
+  font-weight: var(--bold);
+  font-size: 3rem;
+  text-align: center;
+}

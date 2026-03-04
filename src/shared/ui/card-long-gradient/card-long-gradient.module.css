@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background: linear-gradient(128deg, #202020 28.07%, #ff8400 83.69%);
+  border-radius: 20px;
+  min-width: 403px;
+  min-height: 182px;
+}
+
+@media screen and (max-width: 440px) {
+  .container {
+    min-width: 100%;
+  }
+}

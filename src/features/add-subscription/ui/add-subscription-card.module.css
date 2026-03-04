@@ -1,0 +1,44 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.label {
+  color: var(--primary-color);
+  font-size: 0.95rem;
+  font-weight: var(--bold);
+}
+
+.button {
+  all: unset;
+  font-size: 2.2rem;
+  font-weight: var(--extra-bold);
+  color: var(--color-black);
+  background-color: var(--secondary-color);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  background-color: var(--color-black);
+  width: 3px;
+  height: 40%;
+  border-radius: 20px;
+}
+.button::after {
+  content: "";
+  position: absolute;
+  background-color: var(--color-black);
+  width: 40%;
+  height: 3px;
+  border-radius: 20px;
+}

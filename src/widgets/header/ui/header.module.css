@@ -1,0 +1,6 @@
+.greeting {
+  font-weight: var(--semi-bold);
+  font-size: 1.3rem;
+  margin: 0;
+  margin-bottom: 7px;
+}
