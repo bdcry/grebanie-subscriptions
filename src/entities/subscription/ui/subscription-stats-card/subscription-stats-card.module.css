@@ -1,0 +1,14 @@
+.count {
+  font-size: 6rem;
+  font-weight: var(--bold);
+  color: var(--text-color-primary);
+  margin: 0;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: var(--semi-bold);
+  color: var(--text-color-primary);
+  margin: 0;
+  width: 140px;
+}

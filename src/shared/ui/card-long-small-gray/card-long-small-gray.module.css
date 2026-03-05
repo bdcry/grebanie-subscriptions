@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  background: var(--color-gray);
+  border-radius: 20px;
+  min-width: 403px;
+  min-height: 107px;
+  color: var(--primary-color);
+  padding: 30px 25px;
+}
+
+@media screen and (max-width: 440px) {
+  .container {
+    min-width: 100%;
+  }
+}

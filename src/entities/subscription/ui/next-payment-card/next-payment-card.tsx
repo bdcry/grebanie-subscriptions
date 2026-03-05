@@ -7,6 +7,7 @@ import styles from "./next-payment-card.module.css";
 const NextPaymentCard = (): ReactElement => {
   const subscriptions: TSubscriptions = [
     {
+      id: "a1b2c3d4",
       name: "Яндекс.Плюс",
       price: 200,
       nextPayment: "01.03.2026",

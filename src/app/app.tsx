@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 
 import MainPage from "../pages/main-page/main-page";
-import { SubscriptionsList } from "../widgets/subscriptions-list/ui/subscriptions-list";
+import { SubscriptionsPage } from "../pages/subscriptions-page/subscriptions-page";
 import { MainLayout } from "./routes/main-layout";
 
 const App = () => {
@@ -9,7 +9,7 @@ const App = () => {
     <Routes>
       <Route element={<MainLayout />}>
         <Route path="/" element={<MainPage />} />
-        <Route path="/subscriptions" element={<SubscriptionsList />} />
+        <Route path="/subscriptions" element={<SubscriptionsPage />} />
       </Route>
     </Routes>
   );
