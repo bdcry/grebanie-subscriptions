@@ -2,9 +2,9 @@ import type { ReactElement } from "react";
 
 import { CardLongGradient } from "../../../../shared/ui/card-long-gradient/card-long-gradient";
 import type { TSubscriptions } from "../../model/subscription.types";
-import styles from "./subscription-card.module.css";
+import styles from "./next-payment-card.module.css";
 
-const SubscriptionCard = (): ReactElement => {
+const NextPaymentCard = (): ReactElement => {
   const subscriptions: TSubscriptions = [
     {
       name: "Яндекс.Плюс",
@@ -28,4 +28,4 @@ const SubscriptionCard = (): ReactElement => {
   );
 };
 
-export default SubscriptionCard;
+export default NextPaymentCard;

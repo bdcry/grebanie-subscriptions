@@ -1,9 +1,13 @@
+import { useNavigate } from "react-router-dom";
+
 import { Card } from "../../../shared/ui/card/card";
 import styles from "./check-spending-card.module.css";
 
 export const CheckSpendingCard = () => {
+  const navigate = useNavigate();
+
   const handleClick = () => {
-    console.log("Посмотреть подписки");
+    navigate("/subscriptions");
   };
   return (
     <Card>
