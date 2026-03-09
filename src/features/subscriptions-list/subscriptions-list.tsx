@@ -1,13 +1,14 @@
-import type { ReactElement } from "react";
+import { type ReactElement, useContext } from "react";
 
-import { MOCK_SUBSCRIPTIONS } from "../../entities/subscription/model/subscription.mock";
+import { SubscriptionsContext } from "../../app/providers/subscriptions-context";
 import { SubscriptionInfoCard } from "../../entities/subscription/ui/subscription-info-card/subscription-info-card";
 import styles from "./subscriptions-list.module.css";
 
 export const SubscriptionsList = (): ReactElement => {
+  const { subscriptions } = useContext(SubscriptionsContext);
   return (
     <ul className={styles.list}>
-      {MOCK_SUBSCRIPTIONS.map((subscription) => (
+      {subscriptions.map((subscription) => (
         <li key={subscription.id} className={styles.listItem}>
           <SubscriptionInfoCard subscription={subscription} />
         </li>
